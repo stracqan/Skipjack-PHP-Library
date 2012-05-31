@@ -520,7 +520,7 @@ class Skipjack {
 		* Added by: Angelo Stracquatanio
 		* Date: 5/30/12
 		*
-		* Becuase Skipjack only accepts amounts with 2 decimal places and no commas because they're lazy,
+		* Becuase Skipjack only accepts amounts with 2 decimal places and no commas,
 		* this function cleans up the amount
 		*
 		* @param	string $value
@@ -539,7 +539,7 @@ class Skipjack {
 		* Added by: Angelo Stracquatanio
 		* Date: 5/30/12
 		*
-		* Another example of skipjack's lazyness.  They only accept 1-28 as valid start dates for
+		* They only accept 1-28 as valid start dates for
 		* recurring payments, so this cleans the start date if it's the 29th, 30th, or 31st (page 107 of the doc)
 		*
 		* This builds the date off of today's date and format's it to their specifications: mm/dd/yyyy
