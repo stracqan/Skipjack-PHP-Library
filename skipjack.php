@@ -198,7 +198,7 @@ class Skipjack {
 					if($developer != null) 
 						$this->addField('DeveloperSerialNumber', $developer);
 					else 
-						$this->addfield('DeveloperSerialNumber', $this->devSerialNumber);
+						$this->addField('DeveloperSerialNumber', $this->devSerialNumber);
 				}
 				else if ($type === 'recurring')
 				{
@@ -426,7 +426,7 @@ class Skipjack {
                                 $return = false;
                         } else {
                                 // this will run if there is an error with the information that you have provided to skipjack
-                                $this->errors[] = $errorCodes[$this->response['szReturnCode']];
+                                $this->errors[] = $this->errorCodes[$this->response['szReturnCode']];
 								//$this->errors[] = 'bar';
 								//$this->error = "bar";
                                 $return = false;
